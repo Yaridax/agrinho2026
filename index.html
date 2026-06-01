@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-seedling"></i> Agrinho<span>2026</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">O Concurso</a></li>
+                    <li><a href="#energia-solar">Energia Solar</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>O Sol que Alimenta o Campo e o Amanhã</h1>
+            <p>Descubra como a energia solar impulsiona o tema do Agrinho 2026: <strong>"Agro forte, futuro sustentável"</strong>, transformando tecnologia em preservação ambiental.</p>
+            <a href="#energia-solar" class="btn-primary">Explorar Tecnologia</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding">
+        <div class="container text-center">
+            <span class="subtitle">Concurso Agrinho 2026</span>
+            <h2>Agro Forte, Futuro Sustentável</h2>
+            <p class="section-desc">O projeto deste ano nos convida a refletir sobre a evolução do campo. Um agro forte não é apenas aquele que produz em larga escala, mas o que adota práticas inteligentes e renováveis para garantir a segurança das próximas gerações.</p>
+        </div>
+    </section>
+
+    <section id="energia-solar" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">Inovação no Campo</span>
+                <h2>Como o Sol Transforma a Agricultura</h2>
+            </div>
+            
+            <div class="grid-cards">
+                <div class="card">
+                    <i class="fa-solid fa-solar-panel card-icon"></i>
+                    <h3>Captação Limpa</h3>
+                    <p>Painéis fotovoltaicos convertem a luz do sol em eletricidade sem emitir gases poluentes, aproveitando a vasta área aberta das fazendas.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-droplet card-icon"></i>
+                    <h3>Irrigação Inteligente</h3>
+                    <p>Sistemas de bombeamento de água alimentados por energia solar garantem que as plantações recebam a quantidade certa de água no momento ideal.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-cow card-icon"></i>
+                    <h3>Automação Rural</h3>
+                    <p>Ordenhas mecânicas, refrigeração de leite e cercas elétricas funcionam de forma contínua, reduzindo a dependência da rede elétrica tradicional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">Vantagens Reais</span>
+                <h2>Os Três Pilares da Sustentabilidade Solar</h2>
+            </div>
+
+            <div class="beneficios-container">
+                <div class="beneficio-item">
+                    <div class="beneficio-badge eco"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Pilar Ambiental</h3>
+                    <p>Redução drástica na pegada de carbono do agronegócio. O sol é uma fonte inesgotável e local, evitando o desmatamento e o desgaste de recursos hídricos para energia.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-badge money"><i class="fa-solid fa-wallet"></i></div>
+                    <h3>Pilar Econômico</h3>
+                    <p>Redução de até 95% na conta de luz do produtor rural. O dinheiro economizado pode ser reinvestido em sementes melhores, maquinário e melhoria das condições de trabalho.</p>
+                </div>
+                <div class="beneficio-item">
+                    <div class="beneficio-badge social"><i class="fa-solid fa-users"></i></div>
+                    <h3>Pilar Social</h3>
+                    <p>Leva energia e conectividade para comunidades rurais isoladas, fixando o jovem no campo através da tecnologia (Inovação Tecnológica de Campo).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center">
+                <span class="subtitle">Interatividade</span>
+                <h2>Simulador de Economia Solar</h2>
+                <p class="section-desc">Descubra uma estimativa do impacto positivo que a energia fotovoltaica traria para uma propriedade rural rural fictícia.</p>
+            </div>
+
+            <div class="simulator-box">
+                <div class="form-group">
+                    <label for="conta-luz">Gasto médio mensal com energia (em R$):</label>
+                    <input type="number" id="conta-luz" placeholder="Ex: 1500" min="0">
+                </div>
+                <button onclick="calcularEconomia()" class="btn-secondary">Calcular Impacto</button>
+
+                <div id="resultado" class="resultado-box hidden">
+                    <h3><i class="fa-solid fa-chart-line"></i> Resultado Estimado:</h3>
+                    <p>Sua economia anual estimada será de: <strong id="economia-anual" class="highlight">R$ 0,00</strong></p>
+                    <p>Árvores salvas por ano: <strong id="arvores" class="highlight">0 árvores</strong></p>
+                    <p>CO₂ evitado no planeta: <strong id="carbono" class="highlight">0 kg</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 - Projeto Desenvolvido para o Concurso Agrinho 2026.</p>
+            <p>Tema: <em>Agro forte, futuro sustentável</em> | Foco: Energia Solar no Campo.</p>
+            <p class="credits">Criado por: [Nome dos Alunos / Nome da Escola]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
